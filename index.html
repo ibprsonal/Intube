@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Video Sharing</title>
+    <link rel="stylesheet" href="data/styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <div class="mobile-container" id="scrollContainer">
+        <header id="navbar">
+            <img src="img/logo.png" alt="Logo" class="header-logo" />
+            <div class="nav">
+                <button onclick="toggleSearch()">
+                    <img src="img/search.png" alt="Search" />
+                </button>
+            </div>
+        </header>
+
+        <div class="search-container" id="searchContainer">
+            <input type="text" id="searchInput" placeholder="Search for posts..." onkeyup="searchPosts()">
+            <button class="close-search" onclick="toggleSearch()">X</button>
+        </div>
+
+        <div id="videoFeed">
+            <a href="videos/videoTitle1.html" class="video">
+                <img src="img/thum/post1.jpeg" alt="Post Thumbnail" />
+                <div class="video-title">Sample Post Title 1</div>
+                <div class="video-info">Uploaded 2 hours ago by username123</div>
+            </a>
+            <a href="https://example.com/post2" class="video">
+                <img src="img/thum/post2.jpeg" alt="Post Thumbnail" />
+                <div class="video-title">Sample Post Title 2</div>
+                <div class="video-info">Uploaded 1 hour ago by username456</div>
+            </a>
+            <!-- Additional posts can be added here -->
+        </div>
+
+        <div class="loading" id="loadingIndicator">Refreshing...</div>
+    </div>
+
+    <footer>
+        <button class="footer-button">
+            <img src="img/home.png" alt="Home" />
+            Home
+        </button>
+        <button class="footer-button">
+            <img src="img/video.png" alt="Videos" />
+            Videos
+        </button>
+        <button class="footer-button">
+            <img src="img/star.png" alt="Favourites" />
+            Favourites
+        </button>
+        <button class="footer-button">
+            <img src="img/profile.png" alt="Profile" />
+            Profile
+        </button>
+    </footer>
+
+    <script src="data/script.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>
