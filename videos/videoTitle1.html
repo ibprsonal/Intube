@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Page</title>
+    <link rel="stylesheet" href="data/styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <button onclick="window.history.back()">
+                <img src="../img/back.png" alt="Back" /> <!-- Back button icon -->
+            </button>
+        </div>
+    </header>
+
+    <div class="video-container">
+        <iframe width="100%" height="100%" src="https://app.videas.fr/embed/media/fcf9bf60-0929-4dd5-be75-82c81e46534f/?title=false&logo=false" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true" style="position: absolute; top: 0; left: 0" referrerpolicy="unsafe-url"></iframe>
+    </div>
+
+    <div class="post-container">
+        <h1 class="post-title">Post Title Goes Here</h1>
+        <div class="post-info">Posted on January 1, 2023 by Uploader Name</div>
+
+        <div class="interaction-buttons">
+            <button id="likeButton" onclick="toggleLike()">Like</button>
+            <button id="dislikeButton" onclick="toggleDislike()">Dislike</button>
+        </div>
+
+        <div class="post-description">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.</p>
+            <p>Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim. Fusce egestas elit eget lorem. Ut at libero dictum, efficitur purus non, consequat dui.</p>
+        </div>
+    </div>
+
+    <script src="data/script.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>
